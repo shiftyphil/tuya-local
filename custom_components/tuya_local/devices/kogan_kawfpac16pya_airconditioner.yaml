@@ -103,3 +103,25 @@ secondary_entities:
             value: celsius
           - dps_val: F
             value: fahrenheit
+  - entity: number
+    name: On/Off Timer
+    icon: "mdi:timer"
+    category: config
+    dps:
+      - id: 103
+        type: integer
+        name: value
+        unit: h
+        range:
+          min: 0
+          max: 24
+  - entity: sensor
+    name: Timer Countdown
+    icon: "mdi:timer"
+    class: duration
+    category: diagnostic
+    dps:
+      - id: 105
+        type: integer
+        name: sensor
+        unit: min
